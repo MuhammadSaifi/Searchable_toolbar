@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--Line 10 responsible for display icon -->
+    <!--And line 11 will be draw our searchview without it will not work-->
+<item
+    android:id="@+id/search"
+    android:title="Search"
+    app:showAsAction="ifRoom|collapseActionView"
+    android:icon="@drawable/ic_search_black_24dp"
+    app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+<!-- line  11 must be import in main.kt if it mismatch then our app will be crashed -->
+</menu>
